@@ -7,6 +7,8 @@ sudo apt-get install -y curl git
 # Install nix  and packagespackage manager
 curl https://nixos.org/nix/install | sh
 
+. ~/.nix-profile/etc/profile.d/nix.sh
+
 # Install nix home manager
 export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
 mkdir -m 0755 -p /nix/var/nix/{profiles,gcroots}/per-user/$USER
