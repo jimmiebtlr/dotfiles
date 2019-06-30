@@ -22,7 +22,7 @@
 
     # build tools/libs
     pkgs.openssl.dev
-    pkgs.gpp
+    pkgs.gcc
     pkgs.libffi.dev
   ];
 
