@@ -17,7 +17,8 @@ nix-shell '<home-manager>' -A install
 
 # Download dotfiles
 git init
-git remote add origin git@github.com:jimmiebtlr/dotfiles.git
+#git remote add origin git@github.com:jimmiebtlr/dotfiles.git
+git clone https://github.com/jimmiebtlr/dotfiles.git
 git pull origin master
 
 home-manager switch
