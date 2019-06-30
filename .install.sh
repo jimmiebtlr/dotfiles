@@ -15,8 +15,8 @@ nix-channel --update
 
 nix-shell '<home-manager>' -A install
 
-# Remove generated .nix config
-rm .config/nixpkgs/home.nix
+# Remove generated .nix config and default files in the way
+rm .config/nixpkgs/home.nix .bashrc .profile
 
 # Download dotfiles
 git init
