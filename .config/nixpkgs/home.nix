@@ -27,6 +27,8 @@
     # build tools/libs
     pkgs.stdenv
     pkgs.gcc
+    pkgs.glib
+    pkgs.binutils
     #pkgs.openssl.dev
     #pkgs.libffi.dev
   ];
