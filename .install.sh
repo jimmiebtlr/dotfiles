@@ -26,6 +26,7 @@ git remote add origin https://github.com/jimmiebtlr/dotfiles.git
 git pull origin master
 git remote rm origin
 git remote add origin git@github.com:jimmiebtlr/dotfiles.git
+git branch --set-upstream-to=origin/master master
 
 home-manager switch
 
