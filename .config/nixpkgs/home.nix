@@ -21,6 +21,7 @@
     pkgs.whois
 
     # build tools/libs
+    pkgs.stdenv
     pkgs.openssl.dev
     pkgs.gcc
     pkgs.libffi.dev
