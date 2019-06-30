@@ -119,12 +119,12 @@
   programs.ssh = {
     enable = true;
     controlMaster = "auto";
-    controlPath = "~/.ssh";
+    controlPath = "~/.ssh/%r@%h-%p";
     controlPersist = "600";
     serverAliveInterval = 60;
 
     extraConfig = ''
-HOST *
+Host *
   PreferredAuthentications=publickey
     '';
   };
