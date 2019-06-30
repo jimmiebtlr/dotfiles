@@ -15,6 +15,9 @@ nix-channel --update
 
 nix-shell '<home-manager>' -A install
 
+# Remove generated .nix config
+rm .config/nixpkgs/home.nix
+
 # Download dotfiles
 git init
 #git remote add origin git@github.com:jimmiebtlr/dotfiles.git
