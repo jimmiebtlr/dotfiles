@@ -17,3 +17,5 @@ nix-shell '<home-manager>' -A install
 
 # Download dotfiles
 git clone git@github.com:jimmiebtlr/dotfiles.git
+
+home-manager switch
