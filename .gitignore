@@ -1,0 +1,16 @@
+*
+
+!README.md
+
+!.config
+!.config/nvim
+!.config/nvim/init.vim
+!.config/nixpkgs
+!.config/nixpkgs/home.nix
+
+!.docker
+!.docker/config.json
+
+!.gitignore
+
+!.install.sh
