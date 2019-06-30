@@ -14,15 +14,18 @@
     pkgs.kubectl
     pkgs.nano
     pkgs.neovim
+    pkgs.powerline-fonts
     pkgs.python3
     pkgs.terraform
     pkgs.tmux
+    pkgs.unzip
     pkgs.which
     pkgs.whois
+    pkgs.zip
 
     # build tools/libs
     pkgs.stdenv
-    pkgs.gcc
+    pkgs.clang
     #pkgs.openssl.dev
     #pkgs.libffi.dev
   ];
