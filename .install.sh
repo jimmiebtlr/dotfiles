@@ -2,11 +2,12 @@
 
 set -eu
 
-sudo apt-get install -y curl
+sudo apt-get install -y curl git
 
-sudo usermod -aG docker $(whoami)
+# Download it all!
+git clone git@github.com:jimmiebtlr/dotfiles.git
 
-# Install nix package manager
+# Install nix  and packagespackage manager
 curl https://nixos.org/nix/install | sh
 
 # Install nix home manager
