@@ -2,6 +2,7 @@
 
 {
   home.packages = [
+    pkgs.bazel
     pkgs.cacert
     pkgs.curl
     pkgs.docker
@@ -9,6 +10,7 @@
     pkgs.git
     pkgs.go
     pkgs.google-cloud-sdk
+    pkgs.jq
     pkgs.kubectl
     pkgs.nano
     pkgs.neovim
@@ -16,7 +18,6 @@
     pkgs.tmux
     pkgs.which
     pkgs.whois
-    pkgs.jq
   ];
 
 
@@ -43,7 +44,7 @@
 
     shellAliases={
       vim="nvim";
-      vnix="vim ~/.config/nixpkgs/home.nix && home-manager switch && source ~/.bashrc && gq";
+      vnix="vim ~/.config/nixpkgs/home.nix && home-manager switch && source ~/.bashrc && cd ~ && gq && cd -";
 
       "."="ls -a --color=auto";
       ".."="cd ../";
