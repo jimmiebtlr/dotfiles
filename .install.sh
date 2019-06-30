@@ -16,6 +16,8 @@ nix-channel --update
 nix-shell '<home-manager>' -A install
 
 # Download dotfiles
-git clone git@github.com:jimmiebtlr/dotfiles.git
+git init
+git remote add origin git@github.com:jimmiebtlr/dotfiles.git
+git pull origin master
 
 home-manager switch
