@@ -7,7 +7,6 @@
     pkgs.curl
     pkgs.docker
     pkgs.docker-compose
-    pkgs.gcc
     pkgs.git
     pkgs.go
     pkgs.google-cloud-sdk
@@ -20,6 +19,10 @@
     pkgs.tmux
     pkgs.which
     pkgs.whois
+
+    # build tools/libs
+    pkgs.openssl
+    pkgs.gcc
   ];
 
 
