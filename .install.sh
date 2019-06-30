@@ -15,6 +15,9 @@ nix-channel --update
 
 nix-shell '<home-manager>' -A install
 
+# Remove generated .nix config and default files in the way
+rm .config/nixpkgs/home.nix .bashrc .profile
+
 # Download dotfiles
 git init
 #git remote add origin git@github.com:jimmiebtlr/dotfiles.git
@@ -22,3 +25,6 @@ git remote add https://github.com/jimmiebtlr/dotfiles.git
 git pull origin master
 
 home-manager switch
+
+echo "DON'T FORGET TO ADD SSH KEYS TO RELEVANT LOCATIONS" 
+echo "ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C \"jimmiebtlr@gmail.com\""
