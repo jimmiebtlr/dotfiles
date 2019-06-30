@@ -10,6 +10,7 @@
     pkgs.git
     pkgs.go
     pkgs.google-cloud-sdk
+    pkgs.htop
     pkgs.jq
     pkgs.kubectl
     pkgs.nano
