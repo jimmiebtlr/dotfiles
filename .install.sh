@@ -30,8 +30,7 @@ git branch --set-upstream-to=origin/master master
 
 home-manager switch
 
-# IDK why the fuck nix's python package fucking blows. Tensorflow won't install
-# with it's shitty fucking virtualenv package.
+# Nix python doesn't seem to be working.
 sudo apt-get install -y python3 python3-pip
 
 echo "DON'T FORGET TO ADD SSH KEYS TO RELEVANT LOCATIONS"

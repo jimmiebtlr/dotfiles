@@ -3,6 +3,8 @@
 {
   home.packages = [
     pkgs.bazel
+    pkgs.bazel-buildtools
+    pkgs.bazel-watcher
     pkgs.cacert
     pkgs.curl
     pkgs.docker
