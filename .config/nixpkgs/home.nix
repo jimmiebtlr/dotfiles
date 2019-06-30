@@ -7,6 +7,7 @@
     pkgs.curl
     pkgs.docker
     pkgs.docker-compose
+    pkgs.gcc
     pkgs.git
     pkgs.go
     pkgs.google-cloud-sdk
