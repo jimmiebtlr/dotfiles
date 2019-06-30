@@ -25,9 +25,6 @@ git pull origin master
 git remote rm origin
 git remote add origin git@github.com:jimmiebtlr/dotfiles.git
 
-# idk why this was installed
-sudo apt-get remove openssh-server
-
 home-manager switch
 
 echo "DON'T FORGET TO ADD SSH KEYS TO RELEVANT LOCATIONS"
