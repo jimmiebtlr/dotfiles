@@ -16,7 +16,7 @@
     pkgs.neovim
     pkgs.nox
     pkgs.powerline-fonts
-    pkgs.python36
+    pkgs.python3
     pkgs.terraform
     pkgs.tmux
     pkgs.unzip
@@ -29,8 +29,6 @@
     pkgs.gcc
     pkgs.glib
     pkgs.binutils
-    #pkgs.openssl.dev
-    #pkgs.libffi.dev
   ];
 
 
