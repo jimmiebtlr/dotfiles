@@ -30,4 +30,4 @@ git remote add origin git@github.com:jimmiebtlr/dotfiles.git
 home-manager switch
 
 echo "DON'T FORGET TO ADD SSH KEYS TO RELEVANT LOCATIONS"
-echo "ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C \"jimmiebtlr@gmail.com\""
+echo "ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C jimmiebtlr@gmail.com"
