@@ -16,6 +16,7 @@
     pkgs.neovim
     pkgs.powerline-fonts
     pkgs.python3
+    pkgs.python3Packages.numpy
     pkgs.terraform
     pkgs.tmux
     pkgs.unzip
