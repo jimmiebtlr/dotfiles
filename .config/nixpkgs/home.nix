@@ -21,7 +21,7 @@
     pkgs.whois
 
     # build tools/libs
-    pkgs.openssl
+    pkgs.openssl.dev
     pkgs.gcc
   ];
 
