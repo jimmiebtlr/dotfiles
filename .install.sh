@@ -4,9 +4,6 @@ set -eu
 
 sudo apt-get install -y curl git
 
-# Download it all!
-git clone git@github.com:jimmiebtlr/dotfiles.git
-
 # Install nix  and packagespackage manager
 curl https://nixos.org/nix/install | sh
 
@@ -17,3 +14,6 @@ nix-channel --add https://github.com/rycee/home-manager/archive/release-19.03.ta
 nix-channel --update
 
 nix-shell '<home-manager>' -A install
+
+# Download dotfiles
+git clone git@github.com:jimmiebtlr/dotfiles.git
