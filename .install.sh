@@ -25,3 +25,6 @@ git remote add https://github.com/jimmiebtlr/dotfiles.git
 git pull origin master
 
 home-manager switch
+
+echo "DON'T FORGET TO ADD SSH KEYS TO RELEVANT LOCATIONS" 
+echo "ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C \"jimmiebtlr@gmail.com\""
