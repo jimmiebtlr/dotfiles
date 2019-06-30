@@ -1,3 +1,5 @@
+To setup 
+
 ```
-curl | sh
+curl https://raw.githubusercontent.com/jimmiebtlr/dotfiles/master/.install.sh | sh
 ```
