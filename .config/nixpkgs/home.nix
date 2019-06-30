@@ -23,6 +23,7 @@
     # build tools/libs
     pkgs.openssl.dev
     pkgs.gcc
+    pkgs.libffi
   ];
 
 
