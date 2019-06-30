@@ -17,7 +17,6 @@
     pkgs.which
     pkgs.whois
     pkgs.jq
-    pkgs.yubikey-personalization
   ];
 
 
