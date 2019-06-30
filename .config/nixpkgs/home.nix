@@ -14,10 +14,9 @@
     pkgs.kubectl
     pkgs.nano
     pkgs.neovim
+    pkgs.nox
     pkgs.powerline-fonts
     pkgs.python3
-    pkgs.python3Packages.numpy
-    pkgs.python3Packages.toolz
     pkgs.terraform
     pkgs.tmux
     pkgs.unzip
