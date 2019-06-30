@@ -14,6 +14,7 @@
     pkgs.kubectl
     pkgs.nano
     pkgs.neovim
+    pkgs.python3
     pkgs.terraform
     pkgs.tmux
     pkgs.which
