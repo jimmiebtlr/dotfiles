@@ -153,10 +153,12 @@ Host *
     # escapeTime = 10
     #set-option -g default-terminal "screen-256color"
 
+    extraConfig = ''
     # Open new panes and windows in current directory
-    # bind '"' split-window -c "#{pane_current_path}"
-    # bind % split-window -h -c "#{pane_current_path}"
-    # bind c new-window -c "#{pane_current_path}"
+    bind '"' split-window -c "#{pane_current_path}"
+    bind % split-window -h -c "#{pane_current_path}"
+    bind c new-window -c "#{pane_current_path}"
+    '';
 
     plugins= with pkgs; [
       {
