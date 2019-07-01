@@ -160,6 +160,8 @@ Host *
     bind c new-window -c "#{pane_current_path}"
     '';
 
+    historyLimit=20000;
+
     plugins= with pkgs; [
       {
         plugin = tmuxPlugins.resurrect;
