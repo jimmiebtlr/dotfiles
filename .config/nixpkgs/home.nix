@@ -18,6 +18,7 @@
     pkgs.nano
     pkgs.neovim
     pkgs.nox
+    pkgs.ping
     pkgs.powerline-fonts
     pkgs.terraform
     pkgs.tmux
