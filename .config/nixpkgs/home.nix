@@ -9,13 +9,13 @@
     pkgs.curl
     pkgs.docker
     pkgs.docker-compose
+    pkgs.dotnet-sdk
     pkgs.git
     pkgs.go
     pkgs.google-cloud-sdk
     pkgs.htop
     pkgs.jq
     pkgs.kubectl
-    pkgs.mono
     pkgs.nano
     pkgs.neovim
     pkgs.nox

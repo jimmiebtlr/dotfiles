@@ -194,6 +194,12 @@ au FileType vimwiki set shiftwidth=2
 au FileType vimwiki set softtabstop=2
 au FileType vimwiki set tabstop=2
 
+
+"----------------------------------------------
+" Plugin: 'OmniSharp'
+"----------------------------------------------
+let g:OmniSharp_server_stdio = 1
+
 "----------------------------------------------
 " Plugin: 'w0rp/ale'
 "----------------------------------------------
@@ -204,6 +210,7 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_dockerfile_hadolint_use_docker = 1
 
 let g:ale_linters = {
+		  \   'cs': ['OmniSharp'],
 			\   'go': ['gometalinter'],
 			\   'javascript': ['prettier', 'eslint'],
 			\}
