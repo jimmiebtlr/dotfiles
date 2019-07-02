@@ -37,6 +37,7 @@ Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'LnL7/vim-nix'
+Plug 'OmniSharp/omnisharp-vim'
 call plug#end()
 
 "----------------------------------------------

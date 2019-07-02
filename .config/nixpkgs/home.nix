@@ -15,6 +15,7 @@
     pkgs.htop
     pkgs.jq
     pkgs.kubectl
+    pkgs.mono
     pkgs.nano
     pkgs.neovim
     pkgs.nox
