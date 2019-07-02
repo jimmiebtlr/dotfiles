@@ -7,7 +7,6 @@
     pkgs.bazel-watcher
     pkgs.cacert
     pkgs.curl
-    pkgs.docker
     pkgs.docker-compose
     pkgs.git
     pkgs.go
