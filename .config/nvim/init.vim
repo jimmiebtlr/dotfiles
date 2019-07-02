@@ -199,6 +199,7 @@ au FileType vimwiki set tabstop=2
 " Plugin: 'OmniSharp'
 "----------------------------------------------
 let g:OmniSharp_server_stdio = 1
+let g:OmniSharp_server_use_mono = 1
 
 "----------------------------------------------
 " Plugin: 'w0rp/ale'
