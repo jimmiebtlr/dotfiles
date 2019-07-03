@@ -17,7 +17,6 @@
     pkgs.mono
     pkgs.nano
     pkgs.neovim
-    pkgs.nodejs
     pkgs.nox
     pkgs.ping
     pkgs.powerline-fonts
