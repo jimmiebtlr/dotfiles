@@ -8,6 +8,7 @@
     pkgs.cacert
     pkgs.curl
     pkgs.docker-compose
+    pkgs.fzf
     pkgs.git
     pkgs.go
     pkgs.google-cloud-sdk
