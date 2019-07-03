@@ -30,8 +30,22 @@ git branch --set-upstream-to=origin/master master
 
 home-manager switch
 
+# Docker via user install doesn't work so well.
+sudo apt-get install -y lsb_release software-properties-common
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+sudo add-apt-repository \
+	"deb [arch=amd64] https://download.docker.com/linux/debian \
+	$(lsb_release -cs) \
+	stable"
+
+sudo apt-get update
+
 # Nix python doesn't seem to be working.
-sudo apt-get install -y python3 python3-pip flatpak
+sudo apt-get install -y python3 python3-pip flatpak docker-ce
+
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker $(whoami)
 
 # Doubt current nix setup works with gpu + chrome os
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
