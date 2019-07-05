@@ -71,6 +71,7 @@
 
       grep="grep -I --color=auto --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=vendor --exclude-dir=.git --exclude='*.map' --exclude-dir='swagger/**/*.json' --exclude-dir='jest' --exclude-dir='coverage'";
 
+      ds="sudo systemctl start docker";
       dc="docker-compose";
     };
 

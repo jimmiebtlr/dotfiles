@@ -43,13 +43,13 @@ sudo apt-get update
 # Nix python doesn't seem to be working.
 sudo apt-get install -y python3 python3-pip flatpak docker-ce
 
-sudo systemctl start docker
-sudo systemctl enable docker
 sudo usermod -aG docker $(whoami)
 
 # Doubt current nix setup works with gpu + chrome os
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install --user flathub com.unity.UnityHub
+
+gcloud auth login
 
 echo "DON'T FORGET TO ADD SSH KEYS TO RELEVANT LOCATIONS"
 echo "ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C jimmiebtlr@gmail.com"
