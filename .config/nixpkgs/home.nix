@@ -68,6 +68,7 @@
       gq="git commit -am \".\" && git push";
       gp="git push";
       gc="git add . && git commit --no-verify --status -a -v";
+      gs="git status";
 
       grep="grep -I --color=auto --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=vendor --exclude-dir=.git --exclude='*.map' --exclude-dir='swagger/**/*.json' --exclude-dir='jest' --exclude-dir='coverage'";
 
