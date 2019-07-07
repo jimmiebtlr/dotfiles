@@ -162,7 +162,7 @@ let g:terraform_fmt_on_save=1
 " Plugin: airblade/vim-rooter
 "----------------------------------------------
 let g:rooter_change_directory_for_non_project_files = 'current'
-let g:rooter_targets = '.git/,*.yml,*.yaml,Dockerfile'
+let g:rooter_targets = '.git/,*.yml,*.yaml,Dockerfile,requirements.txt,BUILD,BUILD.bazel'
 
 "----------------------------------------------
 " Plugin: vim-airline/vim-airline
