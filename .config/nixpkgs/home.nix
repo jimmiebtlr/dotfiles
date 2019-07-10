@@ -65,7 +65,7 @@
       "."="ls -a --color=auto";
       ".."="cd ../";
 
-      gq="git commit -am \".\" && git push";
+      gq="git add . && git commit -am \".\" && git push";
       gp="git push";
       gc="git add . && git commit --no-verify --status -a -v";
       gs="git status";

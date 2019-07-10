@@ -171,14 +171,14 @@ let g:rooter_targets = '.git/,*.yml,*.yaml,Dockerfile,requirements.txt,BUILD,BUI
 set laststatus=2
 
 " Enable top tabline.
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 
 " Disable showing tabs in the tabline. This will ensure that the buffers are
 " what is shown in the tabline at all times.
 let g:airline#extensions#tabline#show_tabs = 0
 
 " Enable powerline fonts.
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 "----------------------------------------------
 " Plugin: 'OmniSharp'
@@ -197,7 +197,6 @@ let g:ale_dockerfile_hadolint_use_docker = 1
 
 let g:ale_linters = {
 		  \   'cs': ['OmniSharp'],
-			\   'go': ['gometalinter'],
 			\   'javascript': ['prettier', 'eslint'],
 			\}
 
@@ -247,16 +246,6 @@ map <leader>c :nohlsearch<crvm>
 "----------------------------------------------
 " Language: Golang
 "----------------------------------------------
-au FileType go set noexpandtab
-au FileType go set shiftwidth=4
-au FileType go set softtabstop=4
-au FileType go set tabstop=4
-
-au BufNewFile,BufRead *.gotemplate set filetype=gotemplate
-au FileType gotemplate set noexpandtab
-au FileType gotemplate set shiftwidth=4
-au FileType gotemplate set softtabstop=4
-au FileType gotemplate set tabstop=4
 
 " Mappings
 au FileType go nmap <leader>f :w<cr>
@@ -266,7 +255,7 @@ au FileType go nmap <leader>e :GoErrCheck<cr>
 au FileType go nmap <leader>tc :GoCoverageToggle -short<cr>
 au FileType go nmap <leader>tt :GoTest -short<cr>
 au FileType go nmap <leader>tl :GoTest -race<cr>
-au FileType go nmap <leader>tf :GoTestFunc
+au FileType go nmap <leader>tf :GoTestFunc<cr>
 
 au FileType go nmap <leader>gd <Plug>(go-def)
 au FileType go nmap <leader>gdp <Plug>(go-def-pop)
