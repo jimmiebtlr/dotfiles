@@ -33,7 +33,7 @@ Plug 'tomasr/molokai'
 
 " Language support
 Plug 'aklt/plantuml-syntax'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'hashivim/vim-terraform'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'LnL7/vim-nix'
@@ -178,22 +178,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_tabs = 0
 
 " Enable powerline fonts.
-let g:airline_powerline_fonts = 0
-
-"----------------------------------------------
-" Plugin: vimwiki/vimwiki
-"----------------------------------------------
-" Path to wiki
-let g:vimwiki_list = [{
-			\ 'path': '~/Dropbox/vimwiki',
-			\ 'syntax': 'markdown',
-			\ 'ext': '.vimwiki.markdown'}]
-
-au FileType vimwiki set expandtab
-au FileType vimwiki set shiftwidth=2
-au FileType vimwiki set softtabstop=2
-au FileType vimwiki set tabstop=2
-
+let g:airline_powerline_fonts = 1
 
 "----------------------------------------------
 " Plugin: 'OmniSharp'
@@ -321,7 +306,7 @@ let g:go_auto_type_info = 1
 let g:go_auto_sameids = 1
 
 " Fix for location list when vim-go is used together with Syntastic
-let g:go_list_type = "quickfix"
+"let g:go_list_type = "quickfix"
 
 " Set whether the JSON tags should be snakecase or camelcase.
 let g:go_addtags_transform = "camelcase"
