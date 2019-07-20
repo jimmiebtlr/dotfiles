@@ -123,7 +123,7 @@
       completionsDir=~/.nix-profile/share/bash-completion/completions/
       if [ -d "$completionsDir" ]; then
         for filename in $completionsDir/*; do
-          source $filename
+          source $filename >/dev/null
         done
       fi
     '';
