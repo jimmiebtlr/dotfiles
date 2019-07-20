@@ -38,6 +38,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'LnL7/vim-nix'
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 "----------------------------------------------
@@ -368,12 +369,28 @@ au FileType javascript set softtabstop=2
 au FileType javascript set tabstop=2
 
 "----------------------------------------------
-" Language: JSON
+" Language: JS
 "----------------------------------------------
 au FileType js set expandtab
 au FileType js set shiftwidth=2
 au FileType js set softtabstop=2
 au FileType js set tabstop=2
+
+"----------------------------------------------
+" Language: ts
+"----------------------------------------------
+au FileType ts set expandtab
+au FileType ts set shiftwidth=2
+au FileType ts set softtabstop=2
+au FileType ts set tabstop=2
+
+"----------------------------------------------
+" Language: typescript
+"----------------------------------------------
+au FileType typescript set expandtab
+au FileType typescript set shiftwidth=2
+au FileType typescript set softtabstop=2
+au FileType typescript set tabstop=2
 
 "----------------------------------------------
 " Language: JSON

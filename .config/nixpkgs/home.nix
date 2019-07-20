@@ -79,12 +79,12 @@
     initExtra=''
 # ls on entering a directory
       function cd {
-      builtin cd "$@" && ls -a --color=auto
+        builtin cd "$@" && ls -a --color=auto
       }
 
       oldFind=$(which find)
       function find() {
-      $oldFind $@ -prune -o -name ".git" -prune -o -name "vendor"
+        $oldFind $@ -prune -o -name ".git" -prune -o -name "vendor"
       }
 
 
@@ -96,16 +96,17 @@
        sed 's/develop/d/g' | \
        cut -c-10
       }
+
       parse_username() {
-      whoami | cut -c-1
+        whoami | cut -c-1
       }
 
       parse_reponame() {
-      basename "$(git rev-parse --show-toplevel 2> /dev/null)"
+        basename "$(git rev-parse --show-toplevel 2> /dev/null)"
       }
 
       parse_path() {
-      git rev-parse --show-prefix 2> /dev/null
+        git rev-parse --show-prefix 2> /dev/null
       }
 
       export PS1="\n\$(parse_username) \[\033[32m\]\$(parse_reponame)\[\033[33m\](\$(parse_git_branch))\[\033[00m\] \$(parse_path)$ "
@@ -114,7 +115,14 @@
 
       if [ -t 0 ] && [[ -z $TMUX ]] && [[ $- = *i* ]];
       then
-      exec tmux a;
+        exec tmux a;
+      fi
+
+      completionsDir=~/.nix-profile/share/bash-completion/completions/
+      if [ -d "$completionsDir" ]; then
+        for filename in $completionsDir/*; do
+          source $filename
+        done
       fi
     '';
   };
