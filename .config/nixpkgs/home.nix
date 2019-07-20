@@ -2,6 +2,7 @@
 
 {
   home.packages = [
+    pkgs.bash-completion
     pkgs.bazel
     pkgs.bazel-buildtools
     pkgs.bazel-watcher
@@ -18,6 +19,7 @@
     pkgs.mono
     pkgs.nano
     pkgs.neovim
+    pkgs.nix-bash-completions
     pkgs.nodejs
     pkgs.nox
     pkgs.ping
