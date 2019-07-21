@@ -121,11 +121,12 @@
       fi
 
       completionsDir=~/.nix-profile/share/bash-completion/completions/
-      if [ -d "$completionsDir" ]; then
-        for filename in $completionsDir/*; do
-          source $filename >/dev/null
-        done
-      fi
+      source $completionsDir/docker-compose
+      source $completionsDir/pkill
+      source $completionsDir/pgrep
+      source $completionsDir/bazel
+      source $completionsDir/npm
+      source $completionsDir/ssh
     '';
   };
 
