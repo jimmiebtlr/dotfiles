@@ -22,6 +22,7 @@
     pkgs.nix-bash-completions
     pkgs.nodejs
     pkgs.nox
+    pkgs.patchutils # Required by bazel go stuff?
     pkgs.ping
     pkgs.powerline-fonts
     pkgs.terraform
