@@ -25,6 +25,7 @@
     pkgs.patchutils # Required by bazel go stuff?
     pkgs.ping
     pkgs.powerline-fonts
+    pkgs.python37
     pkgs.terraform
     pkgs.tmux
     pkgs.unzip
