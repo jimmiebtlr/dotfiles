@@ -67,7 +67,7 @@
 
     shellAliases={
       vim="nvim";
-      vnix="vim ~/.config/nixpkgs/home.nix && home-manager switch && source ~/.bashrc && cd ~ && $(gq& >/dev/null) && cd -";
+      vnix="vim ~/.config/nixpkgs/home.nix && home-manager switch && source ~/.bashrc && cd ~ && gq && cd -";
 
       "."="ls -a --color=auto";
       ".."="cd ../";
