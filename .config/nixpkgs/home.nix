@@ -28,6 +28,7 @@
     pkgs.python37
     pkgs.python37Packages.pip
     pkgs.python37Packages.pip-tools
+    pkgs.python37Packages.setuptools
     pkgs.terraform
     pkgs.tmux
     pkgs.unzip
