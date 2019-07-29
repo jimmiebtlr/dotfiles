@@ -25,6 +25,14 @@
     pkgs.patchutils # Required by bazel go stuff?
     pkgs.ping
     pkgs.powerline-fonts
+    pkgs.terraform
+    pkgs.tmux
+    pkgs.unzip
+    pkgs.which
+    pkgs.whois
+    pkgs.zip
+
+    # Python
     pkgs.python37Full
     pkgs.python37Packages.pip
     pkgs.python37Packages.pip-tools
@@ -32,12 +40,6 @@
     pkgs.python37Packages.pytest
     pkgs.python37Packages.setuptools-git
     pkgs.python37Packages.setuptools-scm-git-archive
-    pkgs.terraform
-    pkgs.tmux
-    pkgs.unzip
-    pkgs.which
-    pkgs.whois
-    pkgs.zip
 
     # build tools/libs
     pkgs.stdenv
