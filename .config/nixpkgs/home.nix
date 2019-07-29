@@ -27,6 +27,7 @@
     pkgs.powerline-fonts
     pkgs.python37
     pkgs.python37Packages.pip
+    pkgs.python37Packages.pip-tools
     pkgs.terraform
     pkgs.tmux
     pkgs.unzip
