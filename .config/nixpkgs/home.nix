@@ -25,7 +25,7 @@
     pkgs.patchutils # Required by bazel go stuff?
     pkgs.ping
     pkgs.powerline-fonts
-    pkgs.python37
+    pkgs.python37Full
     pkgs.python37Packages.pip
     pkgs.python37Packages.pip-tools
     pkgs.python37Packages.setuptools
