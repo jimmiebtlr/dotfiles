@@ -33,14 +33,7 @@
     pkgs.zip
 
     # Python
-    pkgs.python37Full
     pkgs.pipenv
-    pkgs.python37Packages.pip
-    pkgs.python37Packages.pip-tools
-    pkgs.python37Packages.setuptools
-    pkgs.python37Packages.pytest
-    pkgs.python37Packages.setuptools-git
-    pkgs.python37Packages.setuptools-scm-git-archive
 
     # build tools/libs
     pkgs.stdenv
