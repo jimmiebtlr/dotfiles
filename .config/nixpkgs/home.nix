@@ -50,7 +50,6 @@
     historyFileSize = 50000;
 
     sessionVariables={
-      #PATH=$PATH:~/go/bin
       # Required for home manager
       NIX_PATH="$HOME/.nix-defexpr/channels\${NIX_PATH:\+:}$NIX_PATH";
 
@@ -85,6 +84,7 @@
     };
 
     initExtra=''
+      PATH="$PATH:~/go/bin"
 # ls on entering a directory
       function cd {
         builtin cd "$@" && ls -a --color=auto
