@@ -50,6 +50,7 @@
     historyFileSize = 50000;
 
     sessionVariables={
+      #PATH=$PATH:~/go/bin
       # Required for home manager
       NIX_PATH="$HOME/.nix-defexpr/channels\${NIX_PATH:\+:}$NIX_PATH";
 
