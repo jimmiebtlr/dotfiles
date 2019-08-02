@@ -41,7 +41,7 @@ sudo add-apt-repository \
 sudo apt-get update
 
 # Nix python doesn't seem to be working.
-sudo apt-get install -y flatpak docker-ce apache2-utils
+sudo apt-get install -y flatpak docker-ce apache2-utils python
 
 sudo usermod -aG docker $(whoami)
 

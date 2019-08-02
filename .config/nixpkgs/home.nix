@@ -35,6 +35,7 @@
 
     # Python
     pkgs.pipenv
+    pkgs.python2
 
     # build tools/libs
     pkgs.stdenv
