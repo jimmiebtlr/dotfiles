@@ -13,6 +13,7 @@
     pkgs.git
     pkgs.go
     pkgs.google-cloud-sdk
+    pkgs.helm
     pkgs.htop
     pkgs.jq
     pkgs.kubectl
