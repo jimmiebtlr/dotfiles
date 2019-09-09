@@ -35,8 +35,8 @@
     pkgs.zip
 
     # Python
-    pkgs.pipenv
-    pkgs.python3Full
+    #pkgs.pipenv
+    #pkgs.python3Full
 
     # build tools/libs
     pkgs.stdenv
