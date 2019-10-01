@@ -43,6 +43,8 @@
     pkgs.gcc
     pkgs.glib
     pkgs.binutils
+
+    pkgs.wine
   ];
 
 
