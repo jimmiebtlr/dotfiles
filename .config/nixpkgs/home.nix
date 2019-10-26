@@ -3,9 +3,6 @@
 {
   home.packages = [
     pkgs.bash-completion
-    pkgs.bazel
-    pkgs.bazel-buildtools
-    pkgs.bazel-watcher
     pkgs.cacert
     pkgs.curl
     pkgs.docker-compose
@@ -13,7 +10,6 @@
     pkgs.git
     pkgs.go
     pkgs.google-cloud-sdk
-    pkgs.helm
     pkgs.htop
     pkgs.jq
     pkgs.kubectl
@@ -23,7 +19,6 @@
     pkgs.nix-bash-completions
     pkgs.nodejs
     pkgs.nox
-    pkgs.patchutils # Required by bazel go stuff?
     pkgs.ping
     pkgs.powerline-fonts
     pkgs.terraform_0_12
@@ -44,7 +39,7 @@
     pkgs.glib
     pkgs.binutils
 
-    pkgs.wine
+    #pkgs.wine
   ];
 
 
