@@ -129,7 +129,7 @@
       source $completionsDir/docker-compose
       source $completionsDir/pkill
       source $completionsDir/pgrep
-      source $completionsDir/bazel
+      #source $completionsDir/bazel
       source $completionsDir/npm
       source $completionsDir/ssh
     '';
