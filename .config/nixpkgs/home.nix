@@ -8,7 +8,7 @@
     pkgs.docker-compose
     pkgs.fzf
     pkgs.git
-    #pkgs.go
+    pkgs.go
     pkgs.google-cloud-sdk
     pkgs.htop
     pkgs.jq
