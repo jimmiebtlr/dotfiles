@@ -1,1 +1,1 @@
-/nix/store/bxxdlp13hbjs9hz2rcgr88cjhq2z4m62-home-manager-files/.bashrc
+/nix/store/splx8n7clwsk9igkl64m166li5pwl6hk-home-manager-files/.bashrc
