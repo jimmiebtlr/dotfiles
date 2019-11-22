@@ -21,7 +21,7 @@
     pkgs.nox
     pkgs.ping
     pkgs.powerline-fonts
-    #pkgs.terraform_0_12
+    pkgs.terraform_0_12
     pkgs.tflint
     pkgs.tmux
     pkgs.unzip

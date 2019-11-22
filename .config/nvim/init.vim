@@ -34,7 +34,7 @@ Plug 'tomasr/molokai'
 " Language support
 Plug 'aklt/plantuml-syntax'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-"Plug 'hashivim/vim-terraform'
+Plug 'hashivim/vim-terraform'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'LnL7/vim-nix'
 Plug 'OmniSharp/omnisharp-vim'
