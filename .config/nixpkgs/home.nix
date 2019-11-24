@@ -32,6 +32,7 @@
     # Python
     pkgs.pipenv
     pkgs.python3Full
+    pkgs.python35Packages.setuptools
 
     # build tools/libs
     pkgs.stdenv
