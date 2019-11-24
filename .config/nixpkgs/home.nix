@@ -30,7 +30,7 @@
     pkgs.zip
 
     # Python
-    pkgs.python3Full
+    pkgs.python37Full
     pkgs.pipenv
     pkgs.python37Packages.setuptools
 
