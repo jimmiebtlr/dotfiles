@@ -7,6 +7,8 @@
 !.config/nvim/init.vim
 !.config/nixpkgs
 !.config/nixpkgs/home.nix
+!.config/nix
+!.config/nix/nix.conf
 
 !.docker
 !.docker/config.json
