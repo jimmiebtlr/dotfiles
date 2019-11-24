@@ -29,9 +29,9 @@
     pkgs.zip
 
     # Python
-    pkgs.python3
-    pkgs.python37Packages.pip2nix
-    pkgs.python37Packages.setuptools
+    #pkgs.python3
+    #pkgs.python37Packages.pip2nix
+    #pkgs.python37Packages.setuptools
 
     # build tools/libs
     pkgs.stdenv
