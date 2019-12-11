@@ -14,6 +14,7 @@
 !.docker/config.json
 
 !.gitignore
+!.gitconfig
 
 !.install.sh
 !.install_python_packages.sh

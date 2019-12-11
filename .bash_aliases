@@ -4,8 +4,6 @@ export FZF_DEFAULT_COMMAND='(git ls-tree -r --name-only HEAD ||
 
 alias vim="nvim"
 
-#alias vim="nix-shell ~/.neovim.nix --command nvim ";
-
 alias "."="ls -a --color=auto";
 alias ".."="cd ../";
 alias gq="git add . && git commit -am \".\" && git push";
