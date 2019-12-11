@@ -43,4 +43,5 @@ then
 	exec tmux a;
 else 
 	. ~/.bash_aliases
+	. /home/jimmiebtlr/.nix-profile/etc/profile.d/nix.sh
 fi

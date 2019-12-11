@@ -21,3 +21,6 @@
 !.install_apt_sources.sh
 
 !.bashrc
+!.bash_aliases
+
+!.neovim.nix

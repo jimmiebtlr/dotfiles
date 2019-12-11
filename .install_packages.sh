@@ -7,6 +7,7 @@ sudo apt-get install -y \
 	git \
 	npm \
 	nodejs \
+	netcat \
 	software-properties-common \
 	flatpak \
 	apache2-utils \
@@ -31,3 +32,5 @@ sudo apt-get install -y \
 	google-cloud-sdk
 
 sudo usermod -aG docker $(whoami)
+
+curl https://nixos.org/nix/install | sh
