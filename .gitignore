@@ -24,3 +24,6 @@
 !.bash_aliases
 
 !.neovim.nix
+
+!bin
+!bin/nvim

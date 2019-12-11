@@ -1,7 +1,10 @@
+export EDITOR="nvim"
+
 export PY_USER_BIN=$(python -c 'import site; print(site.USER_BASE + "/bin")')
 export PATH=$PY_USER_BIN:$PATH
 
 export PATH="$PATH:~/go/bin"
+export PATH="$PATH:~/bin"
 
 # ls on entering a directory
 function cd {
@@ -41,7 +44,7 @@ if [ -t 0 ] && [[ -z $TMUX ]] && [[ $- = *i* ]];
 then
 	#echo ""
 	exec tmux a;
-else 
+else
 	. ~/.bash_aliases
 	. /home/jimmiebtlr/.nix-profile/etc/profile.d/nix.sh
 fi
