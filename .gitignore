@@ -16,5 +16,8 @@
 !.gitignore
 
 !.install.sh
+!.install_python_packages.sh
+!.install_packages.sh
+!.install_apt_sources.sh
 
 !.bashrc
