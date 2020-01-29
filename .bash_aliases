@@ -11,6 +11,6 @@ alias gp="git push";
 alias gc="git add . && git commit --no-verify --status -a -v";
 alias gs="git status";
 
-alias grep="grep -I --color=auto --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=vendor --exclude-dir=.git --exclude='*.map' --exclude-dir='swagger/**/*.json' --exclude-dir='jest' --exclude-dir='coverage'";
+alias grep="grep -I --color=auto --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=vendor --exclude-dir=.git --exclude='*.map' --exclude-dir='swagger/**/*.json' --exclude-dir='jest' --exclude-dir='coverage' --exclude-dir='.julia'";
 
 alias dc="docker-compose";

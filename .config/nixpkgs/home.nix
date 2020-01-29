@@ -8,7 +8,17 @@
     pkgs.docker-compose
     pkgs.fzf
     pkgs.git
+
     pkgs.go
+    pkgs.go-tools
+    pkgs.delve
+    pkgs.gocode-gomod
+    pkgs.iferr
+    pkgs.golint
+    pkgs.gotags
+    pkgs.go-motion
+    pkgs.gomodifytags
+
     pkgs.google-cloud-sdk
     pkgs.htop
     pkgs.jq
@@ -18,7 +28,6 @@
     pkgs.nix-bash-completions
     pkgs.nodejs
     pkgs.nox
-    pkgs.ping
     pkgs.powerline-fonts
     pkgs.terraform_0_12
     pkgs.tflint
@@ -27,11 +36,6 @@
     pkgs.which
     pkgs.whois
     pkgs.zip
-
-    # Python
-    #pkgs.python3
-    #pkgs.python37Packages.pip2nix
-    #pkgs.python37Packages.setuptools
 
     # build tools/libs
     pkgs.stdenv
@@ -76,7 +80,7 @@
       gc="git add . && git commit --no-verify --status -a -v";
       gs="git status";
 
-      grep="grep -I --color=auto --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=vendor --exclude-dir=.git --exclude='*.map' --exclude-dir='swagger/**/*.json' --exclude-dir='jest' --exclude-dir='coverage'";
+      grep="grep -I --color=auto --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=vendor --exclude-dir=.git --exclude='*.map' --exclude-dir='swagger/**/*.json' --exclude-dir='jest' --exclude-dir='coverage' --exclude-dir='.julia'";
 
       ds="sudo systemctl start docker";
       dc="docker-compose";
