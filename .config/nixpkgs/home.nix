@@ -25,6 +25,7 @@
     pkgs.kubectl
     pkgs.nano
     pkgs.neovim
+    pkgs.nettools
     pkgs.nix-bash-completions
     pkgs.nodejs
     pkgs.nox
