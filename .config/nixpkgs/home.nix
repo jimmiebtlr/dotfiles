@@ -9,6 +9,7 @@
     pkgs.fzf
     pkgs.git
 
+    pkgs.gimp
     pkgs.go
     pkgs.go-tools
     pkgs.delve
