@@ -38,6 +38,7 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'LnL7/vim-nix'
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
 call plug#end()
 
@@ -375,6 +376,10 @@ au FileType js set expandtab
 au FileType js set shiftwidth=2
 au FileType js set softtabstop=2
 au FileType js set tabstop=2
+au FileType javascriptreact set expandtab
+au FileType javascriptreact set shiftwidth=2
+au FileType javascriptreact set softtabstop=2
+au FileType javascriptreact set tabstop=2
 
 "----------------------------------------------
 " Language: ts

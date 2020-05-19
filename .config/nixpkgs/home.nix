@@ -20,11 +20,14 @@
     pkgs.go-motion
     pkgs.gomodifytags
 
+    pkgs.ngrok
+
     pkgs.google-cloud-sdk
     pkgs.htop
     pkgs.jq
     pkgs.kubectl
     pkgs.nano
+    pkgs.lua53Packages.luarocks-nix
     pkgs.neovim
     pkgs.nettools
     pkgs.nix-bash-completions
@@ -44,8 +47,6 @@
     pkgs.gcc
     pkgs.glib
     pkgs.binutils
-
-    #pkgs.wine
   ];
 
 
@@ -86,6 +87,8 @@
 
       ds="sudo systemctl start docker";
       dc="docker-compose";
+
+      swagger="docker run --rm -it -e GOPATH=$HOME/go:/go -v $HOME:$HOME -w $(pwd) quay.io/goswagger/swagger";
     };
 
     initExtra=''
