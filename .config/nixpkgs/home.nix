@@ -37,7 +37,7 @@
     pkgs.nodejs
     pkgs.nox
     pkgs.powerline-fonts
-    pkgs.terraform_0_12
+    pkgs.terraform_0_13
     pkgs.tflint
     pkgs.tmux
     pkgs.unzip
