@@ -1,6 +1,12 @@
 { pkgs, ... }:
 
+# Crostini workaround
+# sudo umount /proc/{cpuinfo,diskstats,meminfo,stat,uptime}
+
+
 {
+  manual.manpages.enable = false;
+
   home.packages = [
     pkgs.bash-completion
     pkgs.cacert
@@ -9,7 +15,6 @@
     pkgs.fzf
     pkgs.git
 
-    pkgs.gimp
     pkgs.go
     pkgs.go-tools
     pkgs.delve
@@ -19,8 +24,6 @@
     pkgs.gotags
     pkgs.go-motion
     pkgs.gomodifytags
-
-    pkgs.ngrok
 
     pkgs.google-cloud-sdk
     pkgs.htop
@@ -167,9 +170,17 @@
     controlPersist = "600";
     serverAliveInterval = 60;
 
+
     extraConfig = ''
 Host *
   PreferredAuthentications=publickey
+
+Host akeneo-dev
+  HostName 35.194.78.67
+
+Host mathison-dev
+        HostName 34.74.148.251
+        User jimmiebtlr
     '';
   };
 

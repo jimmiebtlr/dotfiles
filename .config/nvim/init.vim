@@ -37,7 +37,7 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 "Plug 'hashivim/vim-terraform'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'LnL7/vim-nix'
-Plug 'OmniSharp/omnisharp-vim'
+"Plug 'OmniSharp/omnisharp-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
 call plug#end()
