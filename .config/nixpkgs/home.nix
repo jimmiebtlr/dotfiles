@@ -50,6 +50,8 @@
     pkgs.gcc
     pkgs.glib
     pkgs.binutils
+
+    pkgs.jetbrains.pycharm-community
   ];
 
 
