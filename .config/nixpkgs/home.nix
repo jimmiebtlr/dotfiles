@@ -183,6 +183,9 @@ Host akeneo-dev
 Host mathison-dev
         HostName 34.74.148.251
         User jimmiebtlr
+
+Host stylegan
+  HostName 35.233.191.15
     '';
   };
 
