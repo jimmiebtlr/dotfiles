@@ -185,7 +185,7 @@ Host mathison-dev
         User jimmiebtlr
 
 Host stylegan
-  HostName 35.233.191.15
+  HostName 34.105.79.81
     '';
   };
 
