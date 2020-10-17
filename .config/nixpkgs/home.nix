@@ -174,6 +174,10 @@
 
 
     extraConfig = ''
+# If having trouble with password auth for ssh-copy-id use
+# -o PreferredAuthentications=password
+
+
 Host *
   PreferredAuthentications=publickey
 
