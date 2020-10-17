@@ -134,10 +134,10 @@
 
       source ~/.nix-profile/etc/profile.d/nix.sh;
 
-      if [ -t 0 ] && [[ -z $TMUX ]] && [[ $- = *i* ]];
-      then
-        exec tmux a;
-      fi
+      #if [ -t 0 ] && [[ -z $TMUX ]] && [[ $- = *i* ]];
+      #then
+      #  exec tmux a;
+      #fi
 
       completionsDir=~/.nix-profile/share/bash-completion/completions/
       source $completionsDir/docker-compose
