@@ -4,6 +4,10 @@ set -eu
 
 sudo apt-get install -y curl git
 
+mv .bashrc .bashrc.bk
+mv .docker/config.json .docker/config.bk.json
+mv .gitconfig .gitconfig.bk
+
 # Download dotfiles
 git init
 git remote add origin https://github.com/jimmiebtlr/dotfiles.git
