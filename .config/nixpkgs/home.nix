@@ -185,7 +185,11 @@ Host mathison-dev
         User jimmiebtlr
 
 Host stylegan
-  HostName 34.105.79.81
+      HostName 34.105.79.81
+
+Host stylegan2
+  User paperspace
+  HostName 184.105.6.126
     '';
   };
 
