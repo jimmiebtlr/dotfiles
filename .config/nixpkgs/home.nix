@@ -35,6 +35,7 @@
     pkgs.nettools
     pkgs.nix-bash-completions
     pkgs.nodejs
+    pkgs.yarn
     pkgs.nox
     pkgs.powerline-fonts
     pkgs.terraform_0_13
