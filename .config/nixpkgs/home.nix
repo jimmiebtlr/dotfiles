@@ -192,6 +192,9 @@ Host mathison-dev
 Host stylegan
       HostName 34.105.79.81
 
+Host mathison-recruiter1
+      HostName 34.94.43.133 
+
 Host stylegan2
   User paperspace
   HostName 184.105.6.126
