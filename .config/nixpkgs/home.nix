@@ -79,7 +79,7 @@
 
     shellAliases={
       vim="nvim";
-      vnix="vim ~/.config/nixpkgs/home.nix && home-manager switch && source ~/.bashrc && cd ~ && gq && cd -";
+      vnix="sudo umount /proc/{cpuinfo,diskstats,meminfo,stat,uptime} && vim ~/.config/nixpkgs/home.nix && home-manager switch && source ~/.bashrc && cd ~ && gq && cd -";
 
       "."="ls -a --color=auto";
       ".."="cd ../";
@@ -94,7 +94,7 @@
       ds="sudo systemctl start docker";
       dc="docker-compose";
 
-      swagger="docker run --rm -it -e GOPATH=$HOME/go:/go -v $HOME:$HOME -w $(pwd) quay.io/goswagger/swagger";
+      alert="for _ in {1..5}; do tput bel && sleep 0.5; done";
     };
 
     initExtra=''
@@ -189,11 +189,8 @@ Host mathison-dev
         HostName 34.74.148.251
         User jimmiebtlr
 
-Host stylegan
-      HostName 34.105.79.81
-
 Host mathison-recruiter1
-      HostName 34.94.43.133 
+      HostName 34.94.43.133
 
 Host stylegan2
   User paperspace
